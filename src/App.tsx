@@ -1,14 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import todoPage from './Pages/todoPage';
+import TodoPage from './Pages/todoPage';
 
 function App() {
   return (
     <div className="App">
       <h1 className="page-title">To do list</h1>
+      <TodoPage />
       <Router>
         <Routes>
-          <Route path="/" element={todoPage()}></Route>
+          <Route path="/" element={TodoPage()}></Route>
         </Routes>
       </Router>
     </div>
